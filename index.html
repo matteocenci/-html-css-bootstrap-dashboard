@@ -18,7 +18,7 @@
 
 <body>
     <header>
-        <nav class="navbar bg-dark border-bottom border-body d-md-none" data-bs-theme="dark">
+        <nav class="navbar bg-dark border-bottom border-body d-md-none fixed-top" data-bs-theme="dark">
             <div class="container-fluid">
               <a class="navbar-brand" href="#">Bootstrap Dashboard</a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
@@ -75,7 +75,7 @@
         
         
         <div class="container-fluid">
-            <div class="row">
+            <div class="row d-flex justify-content-center">
 
                 <div class="d-flex flex-column flex-shrink-0 p-3 text-bg-dark d-none d-md-block" style="width: 30vw; height: 100vh;">
                     <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
@@ -137,18 +137,50 @@
                     </div>
                 </div>
 
-                <div class="d-flex flex-column flex-shrink-0  px-4 py-5 text-center" style="width: 70vw; height: 100vh;">
-                    <img class="d-block mx-auto mb-4" src="/docs/5.3/assets/brand/bootstrap-logo.svg" alt="" width="72" height="57">
-                    <h1 class="display-5 fw-bold text-body-emphasis">Centered hero</h1>
+                <div class="d-flex flex-column flex-shrink-0  px-4 py-5 w-sm-100" style="width: 70vw; height: 100vh;">
+                    
+                    <h1 class="display-5 mt-3 fw-bold text-body-emphasis text-center">Crea nuovo prodotto</h1>
                     <div class="col-lg-6 mx-auto">
-                      <p class="lead mb-4">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
-                      <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-                        <button type="button" class="btn btn-primary btn-lg px-4 gap-3">Primary button</button>
-                        <button type="button" class="btn btn-outline-secondary btn-lg px-4">Secondary</button>
+                      <p class="lead mb-4 text-center">In africa ogni mattina, quando sorge il sole una gazzella muore...cioè si sveglia già morta, perchè probabilmente il giorno prima non si sentiva molto. E qua chiusa parentesi. In africa, ogni mattina quando sorge un leone si sveglia, appena si sveglia comincia a correre...per evitare di fare la ifne della gazzella.</p>
+
+                      
+                    </div>
+                    <div class="mb-4 mt-3 d-md-flex">
+                      <label for="exampleFormControlInput1" class="form-label text fw-semibold me-md-5">Nome</label>
+                      <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="es. Samsung Galaxy s24 pro">
+                    </div>
+                    <div class="mb-4 mt-1 d-md-flex">
+                      <label for="exampleFormControlInput1" class="form-label text fw-semibold me-md-5">Prezzo</label>
+                      <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="es. 599.99€">
+                    </div>
+                    <div class="mb-4 mt-1 d-md-flex">
+                      <label for="exampleFormControlInput1" class="form-label text fw-semibold me-md-5">Marca</label>
+                      <div class="dropdown">
+                        <button class="btn btn-outline-dark dropdown-toggle px-5" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          ---Seleziona---
+                        </button>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Iphone 13</a></li>
+                          <li><a class="dropdown-item" href="#">Blackberry</a></li>
+                          <li><a class="dropdown-item" href="#">Samsung Galaxy 24 pro</a></li>
+                          <li><a class="dropdown-item" href="#">Huawei P10</a></li>
+                          <li><a class="dropdown-item" href="#">OnePlus One</a></li>
+                          <li><a class="dropdown-item" href="#">Xiaomi Redmi 3</a></li>
+                        </ul>
                       </div>
                     </div>
-                  </div>
+                    <div class="mb-3 text-start">
+                      <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Inserisci la descrizione del prodotto, massimo 1000 caratteri" rows="6"></textarea>
+                    </div>
 
+                    <div class="btn-group py-3" role="group" aria-label="Basic example">
+                      <button type="button" class="btn bg-body-secondary">Scegli File</button>
+                      <button type="button" class="btn bg-body-tertiary">Nessun file selezionato</button>
+                      <button type="button" class="btn bg-body-secondary">Immagine</button>
+                    </div>
+                  </div>
+                      
+                  
                 
                 
                 
